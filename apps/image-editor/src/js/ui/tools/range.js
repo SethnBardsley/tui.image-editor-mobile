@@ -240,6 +240,8 @@ class Range {
   }
 
   _changeInput(event) {
+    e.stopPropagation();
+    
     clearTimeout(this._userInputTimer);
 
     this._userInputTimer = setTimeout(() => {
